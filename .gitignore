@@ -1,0 +1,8 @@
+.vscode/
+puthing_gui.py
+run_server.py
+run_server.pyw
+puthing.db
+__pycache__/
+*.pyc
+.env
