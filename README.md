@@ -1,44 +1,17 @@
-# Puthing Around - Secret Universe (Roblox)
+# Puthing Around
 
-The cipher awaits. A relic from the forgotten dimension.
+an experiment from 2024. still works somehow.
 
-Wordle-style secret code guessing with dual backend: local (SQLite) for development, or Supabase for the collective consciousness.
-
-## Structure
+no documentation. just open it and figure it out.
 
 ```
 .
-├── puthing_server.py        # Local server with SQLite (development)
-├── index.html               # Web interface (fallback to Supabase)
-├── .vscode/
-│   └── mcp.json           # MCP client configuration
+├── index.html
+├── hint.html
+├── hidden.html
 └── supabase/
-    ├── migrations/        # The ancient schema
-    └── functions/         # Edge Functions (the ritual gateways)
+    ├── migrations/
+    └── functions/
 ```
 
-## Development
-
-```bash
-# Awaken the cipher
-python puthing_server.py init <secret-code>
-
-# Open the portal
-python puthing_server.py serve
-# Available at http://localhost:8787
-
-# Consult the records
-python puthing_server.py stats
-
-# Alter reality
-python puthing_server.py set-code <new-code>
-```
-
-## Production (Supabase)
-
-Apply migrations to the void. Deploy the ritual gateways.
-
-## Endpoints
-
-- `POST /api/verify` — channel your guess into the cipher
-- `GET /api/stats` — consult the archives
+if you're reading this, you're probably lost.

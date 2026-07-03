@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="https://static.wikitide.net/secretuniversewikiwiki/thumb/8/85/Puthing_Around.png/150px-Puthing_Around.png" />
+<title>The Cipher Speaks</title>
+<style>
+html,body{margin:0;padding:0;background:#000;height:100%;display:flex;align-items:center;justify-content:center;color:#a67c3c;font:14px/1.6 "Space Mono",monospace;text-align:center}
+.container{max-width:500px;padding:20px}
+input{background:#111;border:1px solid #333;color:#a67c3c;padding:10px;font:14px monospace;width:200px;text-align:center;margin-top:10px}
+button{background:#111;border:1px solid #333;color:#a67c3c;padding:10px 20px;font:14px monospace;cursor:pointer;margin-top:10px}
+.hint-revealed{color:#4a6a44;margin-top:20px;font-size:14px;display:none}
+</style>
+</head>
+<body oncontextmenu="return false">
+<div class="container">
+  <div>this only responds to echoes</div>
+  <input type="text" id="answer" placeholder="type the echo..." autocomplete="off" />
+  <button onclick="check()">listen</button>
+  <div class="hint-revealed" id="hint"></div>
+</div>
+<script>
+function check(){
+  var v = document.getElementById('answer').value.trim().toLowerCase();
+  if(v === 'echo'){
+    document.getElementById('hint').style.display = 'block';
+    document.getElementById('hint').textContent = 'the first letter is the last letter of the alphabet in reverse';
+  }
+}
+</script>
+</body>
+</html>

@@ -7,32 +7,30 @@
 <title>Echoes</title>
 <style>
 html,body{margin:0;padding:0;background:#000;height:100%;display:flex;align-items:center;justify-content:center;color:#a67c3c;font:14px/1.6 "Space Mono",monospace;text-align:center}
-.container{max-width:500px;padding:20px;opacity:0.3;position:relative}
+.container{max-width:600px;padding:20px;opacity:0.3;position:relative}
+img{max-width:100%;height:auto;border:1px solid #222;margin-bottom:20px;opacity:0.6}
 .hidden{display:none}
 .ghost{color:#222;font-size:11px;margin-top:40px;opacity:0.5}
-.secret{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px;pointer-events:none;opacity:0.25;letter-spacing:4px}
-.whisper{position:fixed;bottom:20px;right:20px;color:#111;font-size:10px;font-family:monospace;opacity:0.35;pointer-events:none}
+.code{background:#111;border:1px solid #333;color:#a67c3c;padding:15px;font:14px monospace;margin-top:20px;text-align:center;letter-spacing:4px;opacity:0.7}
 </style>
 </head>
 <body oncontextmenu="return false">
-<div class="container" style="position:relative">
+<div class="container">
   what you see is not the truth
-  <div class="hidden">z is not the end</div>
-  <div class="hidden">the answer hides in plain sight</div>
-  <div class="hidden">read between the lines</div>
+  <img src="https://sanctuaryepoch.neocities.org/trilogy.png" alt="trilogy" />
   <div class="hidden">the code is not throzyckd</div>
   <div class="hidden">follow the alphabet backwards</div>
+  <div class="hidden">the cipher speaks in echoes</div>
   <div class="ghost">.</div>
-  <div class="secret">SOPYKXDQHARWZCUT</div>
+  <div class="code">wickpubjug</div>
 </div>
-<div class="whisper">z is not the end</div>
 <script>
 document.onkeydown = function(e) {
   if (e.key === 'F12' || (e.ctrlKey && (e.key === 'u' || e.key === 'U'))) {
     return false;
   }
 };
-console.log("%c[HIDDEN]","color:#a67c3c;font-weight:bold","what you see is not the truth");
+console.log("%c[TRILOGY]","color:#a67c3c;font-weight:bold","the image holds the echo");
 </script>
 </body>
 </html>

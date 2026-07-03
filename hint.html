@@ -4,13 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" href="https://static.wikitide.net/secretuniversewikiwiki/thumb/8/85/Puthing_Around.png/150px-Puthing_Around.png" />
-<title>Puthing Around</title>
+<title>Whispers</title>
 <style>
 html,body{margin:0;padding:0;background:#000;height:100%;display:flex;align-items:center;justify-content:center;color:#a67c3c;font:14px/1.6 "Space Mono",monospace;text-align:center}
-.container{max-width:500px;padding:20px;opacity:0.35;position:relative}
+.container{max-width:500px;padding:20px;opacity:0.3;position:relative}
 .hidden{display:none}
 .ghost{color:#222;font-size:11px;margin-top:40px;opacity:0.5}
-.secret{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#1a1a1a;font-size:10px;pointer-events:none;opacity:0.3}
+.secret{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#111;font-size:10px;pointer-events:none;opacity:0.25;letter-spacing:6px;word-break:break-all}
+.whisper{position:fixed;bottom:20px;right:20px;color:#111;font-size:10px;font-family:monospace;opacity:0.4;pointer-events:none}
 </style>
 </head>
 <body oncontextmenu="return false">
@@ -19,9 +20,12 @@ html,body{margin:0;padding:0;background:#000;height:100%;display:flex;align-item
   <div class="hidden">the first letter is the last letter of the alphabet in reverse</div>
   <div class="hidden">look where the light does not touch</div>
   <div class="hidden">count backwards from z</div>
+  <div class="hidden">the grid is a map but not the territory</div>
+  <div class="hidden">sixteen sigils, sixteen paths</div>
   <div class="ghost">.</div>
   <div class="secret">ZYXWVUTSRQPONMLKJIHGFEDCBA</div>
 </div>
+<div class="whisper">start at the edge</div>
 <script>
 document.onkeydown = function(e) {
   if (e.key === 'F12' || (e.ctrlKey && (e.key === 'u' || e.key === 'U'))) {
@@ -29,6 +33,7 @@ document.onkeydown = function(e) {
   }
 };
 console.log("%c[HINT]","color:#a67c3c;font-weight:bold","the path is not on the screen");
+console.log("%c[WHISPER]","color:#222","start at the edge");
 </script>
 </body>
 </html>
